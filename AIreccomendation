@@ -1,0 +1,90 @@
+# AI Recommendation Logic
+# Beginner Python Project
+
+print("================================")
+print("   AI Recommendation System")
+print("================================")
+
+print("\nChoose a category:")
+print("1. Movies")
+print("2. Books")
+print("3. Music")
+
+category = input("\nEnter your choice (Movies/Books/Music): ").lower()
+
+if category == "movies":
+    genre = input("Enter your favorite genre (action/comedy/horror): ").lower()
+
+    if genre == "action":
+        print("\nRecommended Movies:")
+        print("- Avengers: Endgame")
+        print("- John Wick")
+        print("- Mission Impossible")
+
+    elif genre == "comedy":
+        print("\nRecommended Movies:")
+        print("- Home Alone")
+        print("- The Mask")
+        print("- Jumanji")
+
+    elif genre == "horror":
+        print("\nRecommended Movies:")
+        print("- The Conjuring")
+        print("- Annabelle")
+        print("- Insidious")
+
+    else:
+        print("\nSorry! No recommendations available.")
+
+elif category == "books":
+    genre = input("Enter your favorite genre (fiction/science/history): ").lower()
+
+    if genre == "fiction":
+        print("\nRecommended Books:")
+        print("- Harry Potter")
+        print("- The Alchemist")
+        print("- Percy Jackson")
+
+    elif genre == "science":
+        print("\nRecommended Books:")
+        print("- A Brief History of Time")
+        print("- Cosmos")
+        print("- The Selfish Gene")
+
+    elif genre == "history":
+        print("\nRecommended Books:")
+        print("- Sapiens")
+        print("- The Silk Roads")
+        print("- Guns, Germs, and Steel")
+
+    else:
+        print("\nSorry! No recommendations available.")
+
+elif category == "music":
+    genre = input("Enter your favorite genre (pop/rock/classical): ").lower()
+
+    if genre == "pop":
+        print("\nRecommended Artists:")
+        print("- Taylor Swift")
+        print("- Ed Sheeran")
+        print("- Dua Lipa")
+
+    elif genre == "rock":
+        print("\nRecommended Artists:")
+        print("- Queen")
+        print("- Linkin Park")
+        print("- Imagine Dragons")
+
+    elif genre == "classical":
+        print("\nRecommended Artists:")
+        print("- Mozart")
+        print("- Beethoven")
+        print("- Bach")
+
+    else:
+        print("\nSorry! No recommendations available.")
+
+else:
+    print("\nInvalid category selected.")
+
+print("\nThank you for using the AI Recommendation System!")
